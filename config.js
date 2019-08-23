@@ -1,5 +1,5 @@
 const  { HEARTBEAT_INTERVAL = 10, HEARTBEAT_TIMEOUT = 30 } = process.env;
-export default {
+module.exports = {
 	logLevel: process.env.MOLECULER_LOG_LEVEL || "error",
 	sampleCount: 1,
 	metrics: true,
@@ -73,16 +73,16 @@ export default {
 	middlewares: [],
 
 	// Called after broker created.
-	created(broker) {
-		broker.getCpuUsage = async function() {
-			return {
-				avg: 1,
-				usages: [
-					1
-				]
-			};
-		};
-	},
+// 	created(broker) {
+// 		broker.getCpuUsage = async function() {
+// 			return {
+// 				avg: 1,
+// 				usages: [
+// 					1
+// 				]
+// 			};
+// 		};
+// 	},
 
 	// // Called after broker starte.
 	// started(/* broker*/) {

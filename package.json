@@ -11,7 +11,7 @@
   "dependencies": {
     "moleculer": "^0.13.5",
     "moleculer-repl": "^0.5.5",
-    "msgpack5": "^4.2.1",
+    "msgpack5": "^4.5.1",
     "nats": "^1.2.2"
   }
 }
